@@ -57,7 +57,7 @@ void* speed_thread(void*)
 
 int main(int argc, char *argv[])
 {
-    display = DisplayFactory::getDisplay(Display::CONSOLE);
+    display = DisplayFactory::getDisplay(Display::LCD);
 
     sem_init(&full_buffer_sem, 0, 0);
     sem_init(&empty_buffer_sem, 0, 7);
