@@ -17,7 +17,7 @@ void LCDDisplay::show(int number)
     
     std::stringstream ss;
     for (int i = 0; i < number; ++i) {
-        ss << "=";
+        ss << i + 1;
     }
 
     lcd_message(lcd_fd, "%s", ss.str().c_str());
